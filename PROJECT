@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: guestbook
 repo: github.com/olastanczak24/kubebuilder-cronjob
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: webapp
+  kind: Guestbook
+  path: github.com/olastanczak24/kubebuilder-cronjob/api/v1
+  version: v1
 version: "3"
